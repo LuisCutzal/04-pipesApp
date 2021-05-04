@@ -1,8 +1,15 @@
-<h1>{{nombre| titlecase}}</h1>
-<!--esto de los pipes es solo para la visualizacion de la informacion
-para el manejo de la misma no se toma en cuenta-->
-<h1>{{valor | number}}</h1>
+<div class="texto">
+  <h1>{{nombre| titlecase}}</h1>
+  <!--esto de los pipes es solo para la visualizacion de la informacion
+  para el manejo de la misma no se toma en cuenta-->
+  <h1>{{valor | number}}</h1>
+</div>
 
-<button (click)="MostrarNombre()">
-  cambiar nombre
+
+
+<button pButton 
+        
+
+(click)="MostrarNombre()"
+        label="Cambiar Nombre">
 </button>
