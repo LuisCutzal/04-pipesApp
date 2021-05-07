@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import {CardModule} from 'primeng/card';
+import { PrimeNgModule } from './prime-ng/prime-ng.module';
 
-import {ButtonModule} from 'primeng/button';
+
 
 @NgModule({
   declarations: [
@@ -11,8 +11,7 @@ import {ButtonModule} from 'primeng/button';
   ],
   imports: [
     BrowserModule,
-    ButtonModule,
-    CardModule
+    PrimeNgModule
   ],
   providers: [],
   bootstrap: [AppComponent]
