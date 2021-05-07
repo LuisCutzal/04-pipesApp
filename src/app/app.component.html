@@ -8,8 +8,15 @@
 
 
 <button pButton 
-        
-
-(click)="MostrarNombre()"
-        label="Cambiar Nombre">
+        (click)="MostrarNombre()"
+        label="Cambiar Nombre"
+        class="p-button-help"
+        icon="pi pi-check"
+        iconPos="right">
 </button>
+
+<p-card [header]="nombre | titlecase"
+        subheader="esto es el subtitulo">
+        hola como estan
+  
+</p-card>
