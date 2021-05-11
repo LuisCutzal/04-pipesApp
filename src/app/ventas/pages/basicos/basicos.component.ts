@@ -9,6 +9,7 @@ export class BasicosComponent {
   nombreUpper:string="luis";
   nombreCompleto:string="LuiS AnTOnIo";
 
-
+  fecha:Date=new Date(); //dia de hoy 
+  
 
 }
