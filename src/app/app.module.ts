@@ -13,6 +13,10 @@ import localEsGuatemala from '@angular/common/locales/es-GT';
 import { registerLocaleData } from '@angular/common';
 registerLocaleData(localEsGuatemala);
 
+import localFrances from '@angular/common/locales/fr';
+registerLocaleData(localFrances);
+
+
 
 
 @NgModule({
