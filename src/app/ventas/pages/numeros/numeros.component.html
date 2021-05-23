@@ -7,11 +7,52 @@
 </div>
 
 <div class="p-grid">
-    <div class="p-col-4">
+    <div class="p-col-6">
         <p-card header="Ventas Netas"
                 subheader="del año">
-            <i class="pi pi-dollar"> </i>
-            {{(ventasNetas+1100000)|number:'1.6-6'}}
+                <ul>
+                    <li>
+                        <i class="pi pi-dollar"> </i>
+                        ventasNetas+1100000 | number:'1.6-6':'en'
+                    </li>
+                    <li>
+                        <i class="pi pi-money-bill"></i>
+                        ventasNetas+1100000 | number:'1.6-6':'es-GT'
+                    </li>
+                    <li>
+                        <i class="pi pi-money-bill"></i>
+                        ventasNetas+1100000 | number:'1.6-6':'fr'
+                    </li>
+                    <li>
+                        <i class="pi pi-money-bill"></i>
+                        ventasNetas+1100000 | number:'1.6-6':'es-CR'
+                    </li>
+                </ul>
+        </p-card>
+    </div>
+
+    <div class="p-col-6">
+        <p-card header="Ventas Netas"
+                subheader="del año">
+                <ul>
+                    <li>
+                        <i class="pi pi-dollar"> </i>
+                        {{(ventasNetas+1100000)|number:'1.6-6':'en'}}
+                    </li>
+                    <li>
+                        <i class="pi pi-money-bill"></i>
+                        {{(ventasNetas+1100000)|number:'1.6-6':'es-GT'}}
+                    </li>
+                    <li>
+                        <i class="pi pi-money-bill"></i>
+                        {{(ventasNetas+1100000)|number:'1.6-6':'fr'}}
+                    </li>
+                    <li>
+                        <i class="pi pi-money-bill"></i>
+                        {{(ventasNetas+1100000)|number:'1.6-6':'es-CR'}}
+                    </li>
+                </ul>
+            
         </p-card>
     </div>
 </div>

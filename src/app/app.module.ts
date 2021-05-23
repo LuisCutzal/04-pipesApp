@@ -16,8 +16,8 @@ registerLocaleData(localEsGuatemala);
 import localFrances from '@angular/common/locales/fr';
 registerLocaleData(localFrances);
 
-
-
+import localCostarica from '@angular/common/locales/es-CR';
+registerLocaleData(localCostarica)
 
 @NgModule({
   declarations: [
