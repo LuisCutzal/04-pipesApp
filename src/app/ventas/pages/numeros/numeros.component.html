@@ -55,4 +55,84 @@
             
         </p-card>
     </div>
+    <div class="p-col-6">
+        <p-card header="Ventas Brutas"
+                subheader="del año">
+                <ul>
+                    <li>
+                        ventasNetas+2200000 | currency:'':'symbol-narrow':'1.4-4'
+                    </li>
+                    <li>
+                        ventasNetas+2200000 | currency:'EUR':'symbol-narrow'
+                    </li>
+                    <li>
+                        ventasNetas+2200000 | currency:'MXN'
+                    </li>
+                    <li>
+                        ventasNetas+2200000 | currency: 'JPY'
+                    </li>
+                </ul>
+        </p-card>
+    </div>
+
+    <div class="p-col-6">
+        <p-card header="Ventas Brutas"
+                subheader="del año">
+                <ul>
+                    <li>
+                        {{(ventasNetas+2200000)|currency:'USD':'symbol-narrow':'1.4-4'}}
+                    </li>
+                    <li>
+                        {{(ventasNetas+2200000)|currency:'EUR':'symbol-narrow'}}
+                    </li>
+                    <li>
+                        {{(ventasNetas+2200000)|currency:'MXN':' ':'1.2-2'}}
+                    </li>
+                    <li>
+                        {{(ventasNetas+2200000)|currency:'JPY':'symbol-narrow'}}
+                    </li>
+                </ul>
+            
+        </p-card>
+    </div>
+    <div class="p-col-6">
+        <p-card header="Ganancias %"
+                subheader="del año">
+                <ul>
+                    <li>
+                        porcentaje|percent:'2.2-2'
+                    </li>
+                    <li>
+                        porcentaje|percent:'2.2-2':'es-GT'
+                    </li>
+                    <li>
+                        porcentaje|percent:'2.2-2':'fr'
+                    </li>
+                    <li>
+                        porcentaje|percent:'2.2-2':'es-CR'
+                    </li>
+                </ul>
+        </p-card>
+    </div>
+
+    <div class="p-col-6">
+        <p-card header="Ganancias %"
+                subheader="del año">
+                <ul>
+                    <li>
+                        {{porcentaje|percent:'2.2-2'}}
+                    </li>
+                    <li>
+                        {{porcentaje|percent:'2.2-2':'es-GT'}}
+                    </li>
+                    <li>
+                        {{porcentaje|percent:'2.2-2':'fr'}}
+                    </li>
+                    <li>
+                        {{porcentaje|percent:'2.2-2':'es-CR'}}
+                    </li>
+                </ul>
+            
+        </p-card>
+    </div>
 </div>

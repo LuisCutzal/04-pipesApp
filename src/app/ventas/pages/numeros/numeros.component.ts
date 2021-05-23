@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class NumerosComponent {
 
-  ventasNetas:number=21656191519.1675;
-  porcentaje:number=0.48;
+  ventasNetas:number=21656191519.1675; //no importa el formato que este
+  porcentaje:number=0.5425;//siempre tiene que estar en el formato decimal
 
 
 }
