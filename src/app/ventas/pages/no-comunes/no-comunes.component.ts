@@ -46,4 +46,28 @@ export class NoComunesComponent {
     direccion:'San Juan Comalapa, Chimaltenango'
   }
 
+  //Json Pipe
+  heroes=[//esto es un arreglo
+    {
+      nombre:'Super-Man',
+      vuela:true
+    },
+    {
+      nombre:'Ironr-Man',
+      vuela:true
+    },
+    {
+      nombre:'Hulk',
+      vuela:false
+    },
+    {
+      nombre:'Bat-man',
+      vuela:false
+    },
+    {
+      nombre:'Green lanter',
+      vuela:true
+    }
+  ]
+
 }
