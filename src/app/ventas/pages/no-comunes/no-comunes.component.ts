@@ -39,4 +39,11 @@ export class NoComunesComponent {
     this.clientes.pop();
   }
 
+  //KeyValue Pipe
+  personas={ //esto no es un arreglo, es un objeto, el clientesMap si es un arreglo
+    nombre:'Luis',
+    edad:24,
+    direccion:'San Juan Comalapa, Chimaltenango'
+  }
+
 }

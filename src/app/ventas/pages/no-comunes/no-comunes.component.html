@@ -61,4 +61,13 @@
         </p-fieldset>
     </div>
 
+    <div class="p-col p-md-6">
+        <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+            <ul>
+                <li *ngFor="let persona of personas | keyvalue" >
+                    <b>{{persona.key | titlecase}}: </b> {{persona.value}}
+                </li>
+            </ul>
+        </p-fieldset>
+    </div>
 </div>
