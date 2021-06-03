@@ -7,6 +7,7 @@
 </div>
 
 <div class="p-grid">
+
     <div class="p-col p-md-6">
         <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
             <p>
@@ -24,6 +25,7 @@
             </button>
         </p-fieldset>
     </div>
+
     <div class="p-col p-md-6">
         <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
             <p>
@@ -43,4 +45,20 @@
                     class="p-button-danger" ></button>
         </p-fieldset>
     </div>
+
+    <div class="p-col p-md-6">
+        <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+            <b>Original</b>
+            <pre>{{clientes}}</pre><!-- esta etiqueta hace que el contenido aparezca tipo codigo -->
+            <b>slice:0:6</b>
+            <pre>{{clientes|slice:0:6}}</pre>
+            <b>slice:1:5</b>
+            <pre>{{clientes|slice:1:5}}</pre>
+            <b>slice:2:4</b>
+            <pre>{{clientes|slice:2:4}}</pre>
+            <b>slice:0:6</b>
+            <pre>{{genero|slice:2:8}}</pre>
+        </p-fieldset>
+    </div>
+
 </div>
