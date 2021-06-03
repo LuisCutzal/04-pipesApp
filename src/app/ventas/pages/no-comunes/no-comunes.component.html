@@ -11,13 +11,15 @@
         <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
             Saludos {{ nombre }}, es un placer 
             {{ genero | i18nSelect:invitacionMapa }}
-            <!-- el i18nSelect puede escoger entre una serie de opciones el argumento que enviamos, ya sea string, enteros o boolean -->
+            <!-- el i18nSelect puede escoger entre una serie de opciones el argumento que enviamos, ya sea string, enteros o boolean
+            ademas el map es obligatorio -->
              a nuestro evento el dia de hoy.
         </p-fieldset>
     </div>
     <div class="p-col p-md-6">
         <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-            Content
+            Actualmente {{clientes.length | i18nPlural:clientesMap}}.
+            <!-- el i18nPlural tambien necesita el map -->
         </p-fieldset>
     </div>
 </div>
