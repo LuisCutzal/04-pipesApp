@@ -36,7 +36,8 @@
 
 <div class="p-grid">
     <div class="p-col p-mt-2">
-        <p-table [value]="heroes">
+        <p-table [value]="heroes | ordenar">
+            <!-- antes de que se rendericen los heroes el pipe ordenar los retorna -->
             <!-- el valor que le enviaremos tiene que ser una arreglo -->
             <ng-template pTemplate="header">
                 <tr>
