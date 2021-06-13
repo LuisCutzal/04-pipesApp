@@ -16,18 +16,21 @@
         <button pButton
                 icon="pi pi-sort"
                 label="Por nombre"
+                (click)="cambiarOrden('nombre')"
                 class="p-mr-1"></button>
 
 
         <button pButton
                 icon="pi pi-sort"
-                label="Valores"
+                label="Vuela"
+                (click)="cambiarOrden('vuela')"
                 class="p-mr-1 p-button-success"></button>
 
 
         <button pButton
                 icon="pi pi-sort"
                 label="Por color"
+                (click)="cambiarOrden('color')"
                 class="p-mr-1 p-button-help"></button>
     </div>
 </p-toolbar>
@@ -36,7 +39,7 @@
 
 <div class="p-grid">
     <div class="p-col p-mt-2">
-        <p-table [value]="heroes | ordenar">
+        <p-table [value]="heroes | ordenar:ordenarPor">
             <!-- antes de que se rendericen los heroes el pipe ordenar los retorna -->
             <!-- el valor que le enviaremos tiene que ser una arreglo -->
             <ng-template pTemplate="header">

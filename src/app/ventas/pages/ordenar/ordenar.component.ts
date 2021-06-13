@@ -10,6 +10,8 @@ import { Color, Heroe } from '../../interfaces/ventas.interfaces';
 export class OrdenarComponent {
 
   enMayusculas:boolean=true;
+
+  ordenarPor:string="";
   heroes:Heroe[]=[
     {
       nombre:"SuperMan",
@@ -55,5 +57,8 @@ export class OrdenarComponent {
     }
   }
 
-
+  cambiarOrden(valor:string){
+    this.ordenarPor=valor;
+    
+  }
 }
