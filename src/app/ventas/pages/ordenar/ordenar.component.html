@@ -61,3 +61,30 @@
         </p-table>
     </div>
 </div>
+
+
+<div class="p-grid">
+    <div class="p-col p-mt-2">
+        <p-table [value]="heroes | slice:0">
+            <!-- le enviamos una copia con el slice:0 para que no modifique la tabla anterior-->
+            <!-- antes de que se rendericen los heroes el pipe ordenar los retorna -->
+            <!-- el valor que le enviaremos tiene que ser una arreglo -->
+            <ng-template pTemplate="header">
+                <tr>
+                    <th pSortableColumn="nombre">Nombre <p-sortIcon field="nombre"></p-sortIcon></th>
+                    <th pSortableColumn="vuela">Vuela <p-sortIcon field="vuela"></p-sortIcon></th>
+                    <th pSortableColumn="color">Color <p-sortIcon field="color"></p-sortIcon></th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-heroe>
+                <!-- let es la declaracion de variables del ecmascript 6 (javascript) -->
+                <tr>
+                    <td>{{heroe.nombre}}</td>
+                    <td>{{heroe.vuela | volar | titlecase}}</td>
+                    <!-- se puede encadenar varios pipes -->
+                    <td>{{heroe.color|color}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>
