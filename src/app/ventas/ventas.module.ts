@@ -8,6 +8,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { MayusculasPipe } from './pipes/mayusculas.pipe';
 import { VuelaPipe } from './pipes/volar.pipe';
+import { ColorPipe } from './pipes/color.pipe';
 
 
 
@@ -18,7 +19,8 @@ import { VuelaPipe } from './pipes/volar.pipe';
     BasicosComponent,
     OrdenarComponent,
     MayusculasPipe, //este es el nombre de la clase mayusculas
-    VuelaPipe
+    VuelaPipe,
+    ColorPipe
   ],
   exports:[
     NumerosComponent,
