@@ -49,7 +49,8 @@
                 <!-- let es la declaracion de variables del ecmascript 6 (javascript) -->
                 <tr>
                     <td>{{heroe.nombre}}</td>
-                    <td>{{heroe.vuela}}</td>
+                    <td>{{heroe.vuela | volar | titlecase}}</td>
+                    <!-- se puede encadenar varios pipes -->
                     <td>{{heroe.color}}</td>
                 </tr>
             </ng-template>
